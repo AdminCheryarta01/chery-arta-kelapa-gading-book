@@ -2278,7 +2278,7 @@
 
             if (daysDifference < 1) {
                 alert('⚠️ Booking Tidak Diizinkan!\n\nBooking wajib dilakukan minimal H-1 (satu hari sebelum hari pelaksanaan).\n\nContoh:\n- Hari ini: ' + today.toLocaleDateString('id-ID', { weekday: 'long', year: 'numeric', month: 'long', day: 'numeric' }) + '\n- Booking paling cepat untuk: ' + new Date(today.getTime() + 24*60*60*1000).toLocaleDateString('id-ID', { weekday: 'long', year: 'numeric', month: 'long', day: 'numeric' }) + '\n\nSilakan pilih tanggal yang lebih jauh.');
-                return false;
+                return false;}
 
             if (!/^[A-Z]{1,2}$/.test(plat_kode)) {
                 alert('Kode wilayah harus berupa 1-2 huruf (contoh: B atau AB)');
